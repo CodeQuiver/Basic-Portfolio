@@ -36,17 +36,68 @@ a img {
 nav {
     border-bottom: 2px solid #cccccc;
     background-color: #ffffff;
+    display: block;
+    overflow: hidden; /* this makes the nav bar respect the height of all the elements even if they're floated. */
+    height: 60px;
+}
+
+nav .nav-inner {
+    width: 960px;
+    height: 60px;
+    margin: 10px auto;
+}
+
+nav h2 {
+    float: left;
+    height: 100%;
+    line-height: 1.5em;
+    padding: auto 20px;
+}
+
+nav ul {
+    height: 20px;
+    line-height: 1.5em;
+    padding: auto 10px;
+    display: block;
+    overflow: hidden;
+}
+
+nav li {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5em;
+    display: block;
+    overflow: hidden;
+
 }
 
 
 /* styles within inner box */
+
+div.main-body {
+    clear: both;
+    overflow: hidden; /* this makes the box elements respect the height of all the elements even if they're floated. */
+}
 
 /* .jumbotron {
     background-color: #ffffff;
     border: #dddddd;
 } */
 
-#headshot {
+
+section.inner-box {
+    background-image: none;
+    background-color: #ffffff;
+    border: solid 1px #138d90;
+    width: 960px;
+    margin: 10px auto;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.headshot {
     float: left;
     margin-right:20px;
 }
@@ -60,4 +111,5 @@ footer {
     border-top: solid 4px #138d90;
     color: #ffffff;
     font-size: 10px;
+    overflow: hidden;
 }

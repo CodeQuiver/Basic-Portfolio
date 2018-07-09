@@ -7,7 +7,7 @@ body {
     line-height: 1.8em;
 }
 
-p {
+p, form div {
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -25,6 +25,7 @@ h2 {
 
 a:link, a:visited {
     color: #138d90;
+    text-decoration: none;
 }
 
 a:hover, a:active, a:focus {
@@ -33,6 +34,18 @@ a:hover, a:active, a:focus {
 
 a img {
     border: 0px;
+}
+
+form div * {
+    width: 100%;
+}
+
+button {
+    background-image: none;
+    background-color: #138d90;
+    color: #ffffff;
+    font-size: 100%;
+    padding: 10px 20px;
 }
 
 /* .centered-margin {
@@ -84,9 +97,9 @@ nav ul li {
     padding-right: 10px;
     height: 60px;
     line-height: 60px;
+    text-decoration: none;
     display: block;
     overflow: hidden;
-
 }
 
 
@@ -131,5 +144,4 @@ footer p{
     font-size: 10px;
     text-align: center;
     /* padding: 20px; */
-
 }

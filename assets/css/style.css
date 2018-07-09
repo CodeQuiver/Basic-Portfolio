@@ -4,6 +4,12 @@ body {
     color: #777777;
     background-image: url(../images/subtle_white_feathers.png);
     background-color: #ffffff;
+    line-height: 1.8em;
+}
+
+p {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h1{
@@ -22,12 +28,16 @@ a:link, a:visited {
 }
 
 a:hover, a:active, a:focus {
-    color: #fd3c3c;
+    color: #061283;
 }
 
 a img {
     border: 0px;
 }
+
+/* .centered-margin {
+    margin: 20px auto;
+} */
 
 
 
@@ -44,29 +54,36 @@ nav {
 nav .nav-inner {
     width: 960px;
     height: 60px;
-    margin: 10px auto;
+    margin: 0 auto;
 }
 
 nav h2 {
+    background-image: none;
+    background-color: #138d90;
+    color: #ffffff;
     float: left;
-    height: 100%;
-    line-height: 1.5em;
-    padding: auto 20px;
-}
-
-nav ul {
-    height: 20px;
-    line-height: 1.5em;
-    padding: auto 10px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    margin: 0 auto;
     display: block;
     overflow: hidden;
 }
 
-nav li {
+nav ul {
+    height: 60px;
+    line-height: 60px;
+    padding: 0 10px;
+    display: block;
+    overflow: hidden;
+}
+
+nav ul li {
     float: right;
     padding-left: 10px;
     padding-right: 10px;
-    line-height: 1.5em;
+    height: 60px;
+    line-height: 60px;
     display: block;
     overflow: hidden;
 
@@ -80,18 +97,12 @@ div.main-body {
     overflow: hidden; /* this makes the box elements respect the height of all the elements even if they're floated. */
 }
 
-/* .jumbotron {
-    background-color: #ffffff;
-    border: #dddddd;
-} */
-
-
 section.inner-box {
     background-image: none;
     background-color: #ffffff;
-    border: solid 1px #138d90;
+    border: solid 1px #8d8d8d;
     width: 960px;
-    margin: 10px auto;
+    margin: 20px auto;
     height: 100%;
     overflow: hidden;
     padding: 20px;
@@ -99,17 +110,26 @@ section.inner-box {
 
 .headshot {
     float: left;
-    margin-right:20px;
+    margin-right: 20px;
+    max-width: 100%;
+    min-width: 40px;
+    height: auto;
 }
 
 /* end styles within inner box */
 
 /* footer styles */
 footer {
-    text-align: center;
-    background-color: #666666;
+    background-color: #8d8d8d;
     border-top: solid 4px #138d90;
+    overflow: hidden;
+    height: 600px;
+}
+
+footer p{
     color: #ffffff;
     font-size: 10px;
-    overflow: hidden;
+    text-align: center;
+    /* padding: 20px; */
+
 }

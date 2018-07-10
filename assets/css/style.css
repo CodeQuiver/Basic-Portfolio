@@ -23,6 +23,10 @@ h2 {
     font-size: 24px;
 }
 
+h2 a, h2 a:link, h2 a:visited {
+    color: #ffffff;
+}
+
 a:link, a:visited {
     color: #138d90;
     text-decoration: none;
@@ -130,6 +134,52 @@ section.inner-box {
 }
 
 /* end styles within inner box */
+
+
+/* gallery styles */
+
+div.gallery {
+    width: 280px;
+    text-align: center;
+    margin: 12px;
+    float: left;
+}
+
+div.gallery img {
+    float: left;
+    width: 280px;
+}
+
+div.gallery .imglabel {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 110px;
+}
+
+/* image card styles */
+.card-img-overlay {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    top: 130px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #138d90;
+}
+
+h2.card-title {
+    color: #ffffff;
+    font-size: 24px;
+    position: absolute;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+/* end gallery styles */
+
 
 /* footer styles */
 footer {
